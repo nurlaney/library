@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MyLibrary.Forms
 {
-    public partial class Orders : Form
+    public partial class AddAuthorForm : Form
     {
-        public Orders()
+        public AddAuthorForm()
         {
             InitializeComponent();
         }

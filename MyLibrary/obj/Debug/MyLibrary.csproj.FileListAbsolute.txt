@@ -14,3 +14,4 @@ C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.Sql
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.xml
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Forms.AddBookForm.resources
