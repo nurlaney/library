@@ -1,0 +1,16 @@
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe.config
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.exe
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csprojAssemblyReference.cache
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.LoginForm.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Properties.Resources.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.GenerateResource.cache
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.exe
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.pdb
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Forms.dashboardForm.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Forms.Orders.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.dll
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.xml
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.csproj.CopyComplete
