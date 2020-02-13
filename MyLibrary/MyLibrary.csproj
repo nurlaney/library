@@ -69,6 +69,12 @@
     <Compile Include="Forms\AddBookForm.Designer.cs">
       <DependentUpon>AddBookForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddGenre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,21 @@
     <Compile Include="Forms\Orders.Designer.cs">
       <DependentUpon>Orders.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002131544449_wholeTablesAdded.cs" />
+    <Compile Include="Migrations\202002131544449_wholeTablesAdded.designer.cs">
+      <DependentUpon>202002131544449_wholeTablesAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002131609442_DataAnnonsSet.cs" />
+    <Compile Include="Migrations\202002131609442_DataAnnonsSet.designer.cs">
+      <DependentUpon>202002131609442_DataAnnonsSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddAuthorForm.resx">
@@ -100,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddBookForm.resx">
       <DependentUpon>AddBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddGenre.resx">
       <DependentUpon>AddGenre.cs</DependentUpon>
@@ -112,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Orders.resx">
       <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002131544449_wholeTablesAdded.resx">
+      <DependentUpon>202002131544449_wholeTablesAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002131609442_DataAnnonsSet.resx">
+      <DependentUpon>202002131609442_DataAnnonsSet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -137,9 +167,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="assets\img\icons8-enter-100.png" />
   </ItemGroup>

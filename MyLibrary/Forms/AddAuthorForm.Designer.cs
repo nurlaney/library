@@ -80,7 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 213);
+            this.ClientSize = new System.Drawing.Size(233, 213);
             this.Controls.Add(this.btnAddAuthor);
             this.Controls.Add(this.lblAuthorSurname);
             this.Controls.Add(this.txtAuthorSurname);

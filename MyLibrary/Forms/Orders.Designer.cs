@@ -46,19 +46,22 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpBxReport = new System.Windows.Forms.GroupBox();
-            this.lblCustomer = new System.Windows.Forms.Label();
-            this.lblBook = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
-            this.lblCount = new System.Windows.Forms.Label();
-            this.lblReturnDate = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblPriceNumb = new System.Windows.Forms.Label();
             this.lblCountNumb = new System.Windows.Forms.Label();
+            this.lblPriceNumb = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lblReturnDate = new System.Windows.Forms.Label();
+            this.lblCount = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblBook = new System.Windows.Forms.Label();
+            this.lblCustomer = new System.Windows.Forms.Label();
             this.grpBxChekout = new System.Windows.Forms.GroupBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSrchBook = new System.Windows.Forms.TextBox();
+            this.btnSendtoCard = new System.Windows.Forms.Button();
+            this.btnSendOrder = new System.Windows.Forms.Button();
             this.grpBxSrchCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grbBxSrchBook.SuspendLayout();
@@ -166,6 +169,7 @@
             // grbBxSrchBook
             // 
             this.grbBxSrchBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(101)))), ((int)(((byte)(100)))));
+            this.grbBxSrchBook.Controls.Add(this.txtSrchBook);
             this.grbBxSrchBook.Controls.Add(this.comboBox1);
             this.grbBxSrchBook.Controls.Add(this.button1);
             this.grbBxSrchBook.Controls.Add(this.dataGridView2);
@@ -185,9 +189,9 @@
             "Book Name",
             "Author",
             "Genre"});
-            this.comboBox1.Location = new System.Drawing.Point(9, 43);
+            this.comboBox1.Location = new System.Drawing.Point(137, 43);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 21);
+            this.comboBox1.Size = new System.Drawing.Size(138, 21);
             this.comboBox1.TabIndex = 17;
             // 
             // button1
@@ -234,6 +238,7 @@
             // 
             // grpBxReport
             // 
+            this.grpBxReport.Controls.Add(this.btnSendtoCard);
             this.grpBxReport.Controls.Add(this.lblCountNumb);
             this.grpBxReport.Controls.Add(this.lblPriceNumb);
             this.grpBxReport.Controls.Add(this.dateTimePicker1);
@@ -249,57 +254,15 @@
             this.grpBxReport.TabStop = false;
             this.grpBxReport.Text = "Report";
             // 
-            // lblCustomer
+            // lblCountNumb
             // 
-            this.lblCustomer.AutoSize = true;
-            this.lblCustomer.Location = new System.Drawing.Point(7, 42);
-            this.lblCustomer.Name = "lblCustomer";
-            this.lblCustomer.Size = new System.Drawing.Size(57, 13);
-            this.lblCustomer.TabIndex = 0;
-            this.lblCustomer.Text = "Customer :";
-            // 
-            // lblBook
-            // 
-            this.lblBook.AutoSize = true;
-            this.lblBook.Location = new System.Drawing.Point(7, 70);
-            this.lblBook.Name = "lblBook";
-            this.lblBook.Size = new System.Drawing.Size(38, 13);
-            this.lblBook.TabIndex = 1;
-            this.lblBook.Text = "Book :";
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(7, 98);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(37, 13);
-            this.lblPrice.TabIndex = 2;
-            this.lblPrice.Text = "Price :";
-            // 
-            // lblCount
-            // 
-            this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(8, 133);
-            this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(41, 13);
-            this.lblCount.TabIndex = 3;
-            this.lblCount.Text = "Count :";
-            // 
-            // lblReturnDate
-            // 
-            this.lblReturnDate.AutoSize = true;
-            this.lblReturnDate.Location = new System.Drawing.Point(8, 167);
-            this.lblReturnDate.Name = "lblReturnDate";
-            this.lblReturnDate.Size = new System.Drawing.Size(71, 13);
-            this.lblReturnDate.TabIndex = 4;
-            this.lblReturnDate.Text = "Return Date :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(85, 161);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(110, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.lblCountNumb.AutoSize = true;
+            this.lblCountNumb.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblCountNumb.Location = new System.Drawing.Point(55, 133);
+            this.lblCountNumb.Name = "lblCountNumb";
+            this.lblCountNumb.Size = new System.Drawing.Size(13, 13);
+            this.lblCountNumb.TabIndex = 8;
+            this.lblCountNumb.Text = "3";
             // 
             // lblPriceNumb
             // 
@@ -311,15 +274,57 @@
             this.lblPriceNumb.TabIndex = 7;
             this.lblPriceNumb.Text = "13$";
             // 
-            // lblCountNumb
+            // dateTimePicker1
             // 
-            this.lblCountNumb.AutoSize = true;
-            this.lblCountNumb.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblCountNumb.Location = new System.Drawing.Point(55, 133);
-            this.lblCountNumb.Name = "lblCountNumb";
-            this.lblCountNumb.Size = new System.Drawing.Size(13, 13);
-            this.lblCountNumb.TabIndex = 8;
-            this.lblCountNumb.Text = "3";
+            this.dateTimePicker1.Location = new System.Drawing.Point(85, 161);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(110, 20);
+            this.dateTimePicker1.TabIndex = 6;
+            // 
+            // lblReturnDate
+            // 
+            this.lblReturnDate.AutoSize = true;
+            this.lblReturnDate.Location = new System.Drawing.Point(8, 167);
+            this.lblReturnDate.Name = "lblReturnDate";
+            this.lblReturnDate.Size = new System.Drawing.Size(71, 13);
+            this.lblReturnDate.TabIndex = 4;
+            this.lblReturnDate.Text = "Return Date :";
+            // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Location = new System.Drawing.Point(8, 133);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(41, 13);
+            this.lblCount.TabIndex = 3;
+            this.lblCount.Text = "Count :";
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(7, 98);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(37, 13);
+            this.lblPrice.TabIndex = 2;
+            this.lblPrice.Text = "Price :";
+            // 
+            // lblBook
+            // 
+            this.lblBook.AutoSize = true;
+            this.lblBook.Location = new System.Drawing.Point(7, 70);
+            this.lblBook.Name = "lblBook";
+            this.lblBook.Size = new System.Drawing.Size(38, 13);
+            this.lblBook.TabIndex = 1;
+            this.lblBook.Text = "Book :";
+            // 
+            // lblCustomer
+            // 
+            this.lblCustomer.AutoSize = true;
+            this.lblCustomer.Location = new System.Drawing.Point(7, 42);
+            this.lblCustomer.Name = "lblCustomer";
+            this.lblCustomer.Size = new System.Drawing.Size(57, 13);
+            this.lblCustomer.TabIndex = 0;
+            this.lblCustomer.Text = "Customer :";
             // 
             // grpBxChekout
             // 
@@ -328,7 +333,7 @@
             this.grpBxChekout.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.grpBxChekout.Location = new System.Drawing.Point(372, 274);
             this.grpBxChekout.Name = "grpBxChekout";
-            this.grpBxChekout.Size = new System.Drawing.Size(200, 266);
+            this.grpBxChekout.Size = new System.Drawing.Size(200, 228);
             this.grpBxChekout.TabIndex = 14;
             this.grpBxChekout.TabStop = false;
             this.grpBxChekout.Text = "Cart";
@@ -345,7 +350,7 @@
             this.dataGridView3.GridColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView3.Location = new System.Drawing.Point(0, 19);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(194, 247);
+            this.dataGridView3.Size = new System.Drawing.Size(194, 209);
             this.dataGridView3.TabIndex = 0;
             // 
             // Column4
@@ -363,11 +368,39 @@
             this.Column6.HeaderText = "Total";
             this.Column6.Name = "Column6";
             // 
+            // txtSrchBook
+            // 
+            this.txtSrchBook.Location = new System.Drawing.Point(12, 43);
+            this.txtSrchBook.Name = "txtSrchBook";
+            this.txtSrchBook.Size = new System.Drawing.Size(119, 20);
+            this.txtSrchBook.TabIndex = 18;
+            // 
+            // btnSendtoCard
+            // 
+            this.btnSendtoCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSendtoCard.Location = new System.Drawing.Point(85, 216);
+            this.btnSendtoCard.Name = "btnSendtoCard";
+            this.btnSendtoCard.Size = new System.Drawing.Size(91, 30);
+            this.btnSendtoCard.TabIndex = 9;
+            this.btnSendtoCard.Text = "Send";
+            this.btnSendtoCard.UseVisualStyleBackColor = false;
+            // 
+            // btnSendOrder
+            // 
+            this.btnSendOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSendOrder.Location = new System.Drawing.Point(372, 507);
+            this.btnSendOrder.Name = "btnSendOrder";
+            this.btnSendOrder.Size = new System.Drawing.Size(195, 33);
+            this.btnSendOrder.TabIndex = 10;
+            this.btnSendOrder.Text = "Order";
+            this.btnSendOrder.UseVisualStyleBackColor = false;
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 542);
+            this.Controls.Add(this.btnSendOrder);
             this.Controls.Add(this.grpBxChekout);
             this.Controls.Add(this.grpBxReport);
             this.Controls.Add(this.grbBxSrchBook);
@@ -378,6 +411,7 @@
             this.grpBxSrchCustomer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.grbBxSrchBook.ResumeLayout(false);
+            this.grbBxSrchBook.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.grpBxReport.ResumeLayout(false);
             this.grpBxReport.PerformLayout();
@@ -420,5 +454,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.TextBox txtSrchBook;
+        private System.Windows.Forms.Button btnSendtoCard;
+        private System.Windows.Forms.Button btnSendOrder;
     }
 }
