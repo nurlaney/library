@@ -27,8 +27,8 @@
                         AuthorId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Authors", t => t.AuthorId, cascadeDelete: true)
-                .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: true)
+                .ForeignKey("dbo.Authors", t => t.AuthorId, cascadeDelete: false)
+                .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: false)
                 .Index(t => t.GenreId)
                 .Index(t => t.AuthorId);
             
@@ -77,8 +77,8 @@
                         ReturnDate = c.DateTime(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Books", t => t.BookId, cascadeDelete: true)
-                .ForeignKey("dbo.Orders", t => t.OrderId, cascadeDelete: true)
+                .ForeignKey("dbo.Books", t => t.BookId, cascadeDelete: false)
+                .ForeignKey("dbo.Orders", t => t.OrderId, cascadeDelete: false)
                 .Index(t => t.OrderId)
                 .Index(t => t.BookId);
             

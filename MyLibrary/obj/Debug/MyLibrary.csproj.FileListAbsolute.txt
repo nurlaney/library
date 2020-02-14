@@ -20,3 +20,13 @@ C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Forms.Add
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Forms.AddGenre.resources
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.wholeTablesAdded.resources
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.DataAnnonsSet.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.unexpected.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.contextSetted.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\CryptoHelper.dll
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\CryptoHelper.xml
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.UserAdded.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.UsernameAddedtoUsersTable.resources

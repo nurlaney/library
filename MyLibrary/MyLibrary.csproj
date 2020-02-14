@@ -36,11 +36,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CryptoHelper, Version=3.0.2.0, Culture=neutral, PublicKeyToken=646ad3faa20406ba, processorArchitecture=MSIL">
+      <HintPath>..\packages\CryptoHelper.3.0.2\lib\netstandard2.0\CryptoHelper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.Internal.2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Cryptography.KeyDerivation.2.0.1\lib\netstandard2.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -107,6 +116,22 @@
     <Compile Include="Migrations\202002131609442_DataAnnonsSet.designer.cs">
       <DependentUpon>202002131609442_DataAnnonsSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002132224001_unexpected.cs" />
+    <Compile Include="Migrations\202002132224001_unexpected.designer.cs">
+      <DependentUpon>202002132224001_unexpected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002141141182_contextSetted.cs" />
+    <Compile Include="Migrations\202002141141182_contextSetted.designer.cs">
+      <DependentUpon>202002141141182_contextSetted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002142235173_UserAdded.cs" />
+    <Compile Include="Migrations\202002142235173_UserAdded.designer.cs">
+      <DependentUpon>202002142235173_UserAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002142301293_UsernameAddedtoUsersTable.cs" />
+    <Compile Include="Migrations\202002142301293_UsernameAddedtoUsersTable.designer.cs">
+      <DependentUpon>202002142301293_UsernameAddedtoUsersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -114,6 +139,7 @@
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AddAuthorForm.resx">
@@ -142,6 +168,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002131609442_DataAnnonsSet.resx">
       <DependentUpon>202002131609442_DataAnnonsSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002132224001_unexpected.resx">
+      <DependentUpon>202002132224001_unexpected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002141141182_contextSetted.resx">
+      <DependentUpon>202002141141182_contextSetted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002142235173_UserAdded.resx">
+      <DependentUpon>202002142235173_UserAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002142301293_UsernameAddedtoUsersTable.resx">
+      <DependentUpon>202002142301293_UsernameAddedtoUsersTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -30,13 +30,24 @@ namespace MyLibrary.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnGoOrders = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnGoOrders
+            // 
+            this.btnGoOrders.Location = new System.Drawing.Point(193, 95);
+            this.btnGoOrders.Name = "btnGoOrders";
+            this.btnGoOrders.Size = new System.Drawing.Size(169, 78);
+            this.btnGoOrders.TabIndex = 0;
+            this.btnGoOrders.Text = "Orders";
+            this.btnGoOrders.UseVisualStyleBackColor = true;
             // 
             // dashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 321);
+            this.Controls.Add(this.btnGoOrders);
             this.Name = "dashboardForm";
             this.Text = "dashboard";
             this.ResumeLayout(false);
@@ -46,5 +57,7 @@ namespace MyLibrary.Forms
 
 
         #endregion
+
+        private System.Windows.Forms.Button btnGoOrders;
     }
 }

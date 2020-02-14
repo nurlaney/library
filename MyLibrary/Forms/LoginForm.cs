@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyLibrary.Forms;
+using CryptoHelper;
+using MyLibrary.Data;
+using MyLibrary.Models;
+using System.Data.Entity;
 
 namespace MyLibrary
 {
     public partial class LoginForm : Form
     {
+        private readonly MyLibraryDbContext _context;
+
         public LoginForm()
         {
+            _context = new MyLibraryDbContext();
             InitializeComponent();
         }
 
@@ -26,27 +33,31 @@ namespace MyLibrary
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUsername.Text))
+            if (string.IsNullOrEmpty(txtUsername.Text))
             {
-              dashboardForm dashboard = new dashboardForm();
-              dashboard.ShowDialog();
+               
+                MessageBox.Show("E-mail daxil edin");
+                return;
 
             }
-            else
+
+            if (string.IsNullOrEmpty(txtPassword.Text))
             {
-                MessageBox.Show("Username və ya parol səhvdir");
+                MessageBox.Show("Şifrə daxil edin");
+                return;
             }
 
-            if (!string.IsNullOrEmpty(txtPassword.Text))
+            User user = _context.Users.FirstOrDefault(u => u.Username == txtUsername.Text);
+
+            if (user != null && Crypto.VerifyHashedPassword(user.Password, txtPassword.Text))
             {
                 dashboardForm dashboard = new dashboardForm();
-                dashboard.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Username və ya parol səhvdir");
+                dashboard.Show();
+                this.Hide();
+                return;
             }
 
+            MessageBox.Show("Username ve ya sifre yanlisdir");
 
 
         }

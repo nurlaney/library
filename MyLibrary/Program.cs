@@ -17,7 +17,7 @@ namespace MyLibrary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Orders());
+            Application.Run(new LoginForm());
         }
         
     }

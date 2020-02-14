@@ -20,6 +20,7 @@ namespace MyLibrary.Data
         public DbSet<Author> Authors { get; set; }
         public DbSet<Customer> Customer { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }

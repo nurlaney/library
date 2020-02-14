@@ -75,6 +75,7 @@
             this.btnAddAuthor.TabIndex = 4;
             this.btnAddAuthor.Text = "Add";
             this.btnAddAuthor.UseVisualStyleBackColor = true;
+            this.btnAddAuthor.Click += new System.EventHandler(this.btnAddAuthor_Click);
             // 
             // AddAuthorForm
             // 

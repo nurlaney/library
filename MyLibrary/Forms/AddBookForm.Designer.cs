@@ -124,6 +124,7 @@
             this.btncAddBook.TabIndex = 8;
             this.btncAddBook.Text = "Add Book";
             this.btncAddBook.UseVisualStyleBackColor = true;
+            this.btncAddBook.Click += new System.EventHandler(this.btncAddBook_Click);
             // 
             // nmrcPrice
             // 

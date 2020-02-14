@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddGenre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddGenre = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtAddGenre
             // 
-            this.textBox1.Location = new System.Drawing.Point(37, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtAddGenre.Location = new System.Drawing.Point(37, 75);
+            this.txtAddGenre.Name = "txtAddGenre";
+            this.txtAddGenre.Size = new System.Drawing.Size(194, 20);
+            this.txtAddGenre.TabIndex = 0;
             // 
             // label1
             // 
@@ -57,6 +57,7 @@
             this.btnAddGenre.TabIndex = 2;
             this.btnAddGenre.Text = "Add";
             this.btnAddGenre.UseVisualStyleBackColor = true;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
             // AddGenre
             // 
@@ -65,7 +66,7 @@
             this.ClientSize = new System.Drawing.Size(277, 183);
             this.Controls.Add(this.btnAddGenre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAddGenre);
             this.Name = "AddGenre";
             this.Text = "AddGenre";
             this.ResumeLayout(false);
@@ -75,7 +76,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddGenre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAddGenre;
     }
