@@ -39,6 +39,7 @@
             this.txtSrchName = new System.Windows.Forms.TextBox();
             this.txtSrchSurname = new System.Windows.Forms.TextBox();
             this.grbBxSrchBook = new System.Windows.Forms.GroupBox();
+            this.txtSrchBook = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -46,6 +47,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpBxReport = new System.Windows.Forms.GroupBox();
+            this.btnSendtoCard = new System.Windows.Forms.Button();
             this.lblCountNumb = new System.Windows.Forms.Label();
             this.lblPriceNumb = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -59,9 +61,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtSrchBook = new System.Windows.Forms.TextBox();
-            this.btnSendtoCard = new System.Windows.Forms.Button();
             this.btnSendOrder = new System.Windows.Forms.Button();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
             this.grpBxSrchCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grbBxSrchBook.SuspendLayout();
@@ -83,7 +84,7 @@
             this.grpBxSrchCustomer.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.grpBxSrchCustomer.Location = new System.Drawing.Point(1, 6);
             this.grpBxSrchCustomer.Name = "grpBxSrchCustomer";
-            this.grpBxSrchCustomer.Size = new System.Drawing.Size(365, 262);
+            this.grpBxSrchCustomer.Size = new System.Drawing.Size(365, 231);
             this.grpBxSrchCustomer.TabIndex = 11;
             this.grpBxSrchCustomer.TabStop = false;
             this.grpBxSrchCustomer.Text = "Search Customer";
@@ -132,7 +133,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(6, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(350, 149);
+            this.dataGridView1.Size = new System.Drawing.Size(353, 144);
             this.dataGridView1.TabIndex = 6;
             // 
             // Column1
@@ -180,6 +181,13 @@
             this.grbBxSrchBook.TabIndex = 12;
             this.grbBxSrchBook.TabStop = false;
             this.grbBxSrchBook.Text = "Search Book";
+            // 
+            // txtSrchBook
+            // 
+            this.txtSrchBook.Location = new System.Drawing.Point(12, 43);
+            this.txtSrchBook.Name = "txtSrchBook";
+            this.txtSrchBook.Size = new System.Drawing.Size(119, 20);
+            this.txtSrchBook.TabIndex = 18;
             // 
             // comboBox1
             // 
@@ -253,6 +261,16 @@
             this.grpBxReport.TabIndex = 13;
             this.grpBxReport.TabStop = false;
             this.grpBxReport.Text = "Report";
+            // 
+            // btnSendtoCard
+            // 
+            this.btnSendtoCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSendtoCard.Location = new System.Drawing.Point(85, 216);
+            this.btnSendtoCard.Name = "btnSendtoCard";
+            this.btnSendtoCard.Size = new System.Drawing.Size(91, 30);
+            this.btnSendtoCard.TabIndex = 9;
+            this.btnSendtoCard.Text = "Send";
+            this.btnSendtoCard.UseVisualStyleBackColor = false;
             // 
             // lblCountNumb
             // 
@@ -368,23 +386,6 @@
             this.Column6.HeaderText = "Total";
             this.Column6.Name = "Column6";
             // 
-            // txtSrchBook
-            // 
-            this.txtSrchBook.Location = new System.Drawing.Point(12, 43);
-            this.txtSrchBook.Name = "txtSrchBook";
-            this.txtSrchBook.Size = new System.Drawing.Size(119, 20);
-            this.txtSrchBook.TabIndex = 18;
-            // 
-            // btnSendtoCard
-            // 
-            this.btnSendtoCard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSendtoCard.Location = new System.Drawing.Point(85, 216);
-            this.btnSendtoCard.Name = "btnSendtoCard";
-            this.btnSendtoCard.Size = new System.Drawing.Size(91, 30);
-            this.btnSendtoCard.TabIndex = 9;
-            this.btnSendtoCard.Text = "Send";
-            this.btnSendtoCard.UseVisualStyleBackColor = false;
-            // 
             // btnSendOrder
             // 
             this.btnSendOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -395,11 +396,23 @@
             this.btnSendOrder.Text = "Order";
             this.btnSendOrder.UseVisualStyleBackColor = false;
             // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddCustomer.Location = new System.Drawing.Point(291, 226);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCustomer.TabIndex = 15;
+            this.btnAddCustomer.Text = "Add New";
+            this.btnAddCustomer.UseVisualStyleBackColor = false;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 542);
+            this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.btnSendOrder);
             this.Controls.Add(this.grpBxChekout);
             this.Controls.Add(this.grpBxReport);
@@ -457,5 +470,6 @@
         private System.Windows.Forms.TextBox txtSrchBook;
         private System.Windows.Forms.Button btnSendtoCard;
         private System.Windows.Forms.Button btnSendOrder;
+        private System.Windows.Forms.Button btnAddCustomer;
     }
 }

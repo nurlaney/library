@@ -35,6 +35,8 @@ namespace MyLibrary.Forms
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
             Test3();
+            txtAddGenre.ResetText();
+            MessageBox.Show("Genre Added");
         }
     }
 }

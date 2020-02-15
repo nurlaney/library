@@ -106,6 +106,7 @@
             this.btncAddGenre.TabIndex = 6;
             this.btncAddGenre.Text = "Add G";
             this.btncAddGenre.UseVisualStyleBackColor = true;
+            this.btncAddGenre.Click += new System.EventHandler(this.btncAddGenre_Click);
             // 
             // btncAddAuthor
             // 
@@ -115,6 +116,7 @@
             this.btncAddAuthor.TabIndex = 7;
             this.btncAddAuthor.Text = "Add A";
             this.btncAddAuthor.UseVisualStyleBackColor = true;
+            this.btncAddAuthor.Click += new System.EventHandler(this.btncAddAuthor_Click);
             // 
             // btncAddBook
             // 
@@ -124,7 +126,6 @@
             this.btncAddBook.TabIndex = 8;
             this.btncAddBook.Text = "Add Book";
             this.btncAddBook.UseVisualStyleBackColor = true;
-            this.btncAddBook.Click += new System.EventHandler(this.btncAddBook_Click);
             // 
             // nmrcPrice
             // 

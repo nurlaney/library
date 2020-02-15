@@ -16,5 +16,11 @@ namespace MyLibrary.Forms
         {
             InitializeComponent();
         }
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            AddCustomerForm addingCustomer = new AddCustomerForm();
+            addingCustomer.Show();
+        }
     }
 }

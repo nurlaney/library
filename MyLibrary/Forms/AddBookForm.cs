@@ -24,6 +24,20 @@ namespace MyLibrary.Forms
             //Test();
         }
 
+        private void btncAddGenre_Click(object sender, EventArgs e)
+        {
+            AddGenre addinggenre = new AddGenre();
+            addinggenre.Show();
+        }
+
+        private void btncAddAuthor_Click(object sender, EventArgs e)
+        {
+            AddAuthorForm addingauthor = new AddAuthorForm();
+            addingauthor.Show();
+        }
+
+        
+
         //private void Test()
         //{
         //    Book Book = new Book()
@@ -34,10 +48,5 @@ namespace MyLibrary.Forms
         //    _context.Books.Add(Book);
         //    _context.SaveChanges();
         //}
-
-        private void btncAddBook_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

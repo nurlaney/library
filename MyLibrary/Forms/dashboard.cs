@@ -17,9 +17,24 @@ namespace MyLibrary.Forms
             InitializeComponent();
         }
 
-        private void btnGoORders(object sender, EventArgs e)
-        {
 
+        private void btnGoOrders_Click(object sender, EventArgs e)
+        {
+            Orders order = new Orders();
+            order.Show();
+            return;
+        }
+
+        private void AddBookDashb_Click(object sender, EventArgs e)
+        {
+            AddBookForm addingbook = new AddBookForm();
+            addingbook.Show();
+        }
+
+        private void btnAddCustomerDashb_Click(object sender, EventArgs e)
+        {
+            AddCustomerForm addingCustomer = new AddCustomerForm();
+            addingCustomer.Show();
         }
 
         //dashboardForm  Dashbordfrm = new dashboardForm();

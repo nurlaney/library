@@ -93,6 +93,7 @@
             this.btncCustomerAdd.TabIndex = 6;
             this.btncCustomerAdd.Text = "Add";
             this.btncCustomerAdd.UseVisualStyleBackColor = true;
+            this.btncCustomerAdd.Click += new System.EventHandler(this.btncCustomerAdd_Click);
             // 
             // AddCustomerForm
             // 
