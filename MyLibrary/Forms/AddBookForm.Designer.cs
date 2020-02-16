@@ -84,8 +84,6 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "AAA BBB"});
             this.comboBox2.Location = new System.Drawing.Point(13, 126);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(195, 21);
@@ -199,6 +197,7 @@
             this.Controls.Add(this.txtcBookName);
             this.Name = "AddBookForm";
             this.Text = "Add Book";
+            this.Load += new System.EventHandler(this.AddBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrcPrice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtGrdBooks)).EndInit();
             this.ResumeLayout(false);

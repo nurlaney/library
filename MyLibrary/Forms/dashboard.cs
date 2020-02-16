@@ -49,8 +49,17 @@ namespace MyLibrary.Forms
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            var wholeMyBooks = _context.Books.ToList();
-            dtGrdBooks.DataSource = wholeMyBooks;
+            var wholeMyBooks = _context.Books
+                                              .Include("Genre")
+                                              .Include("Author")
+
+                                              .ToList();
+           
+            foreach (var item in wholeMyBooks)
+            {
+                dtGrdBooks.Rows.Add(item.Name, item.Genre.Name, item.Author.Name + " " + item.Author.Surname, item.Price);
+            }
+            
         }
     }
 }

@@ -17,7 +17,7 @@ namespace MyLibrary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dashboardForm());
+            Application.Run(new LoginForm());
         }
         
     }

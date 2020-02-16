@@ -71,9 +71,10 @@ namespace MyLibrary.Forms
             {
                 Name = txtcBookName.Text,
                 GenreId= comboBox1.SelectedIndex,
-                AuthorId= comboBox2.SelectedIndex,
-                Price = nmrcPrice.Value
+                AuthorId=comboBox2.SelectedIndex,
+                Price =  nmrcPrice.Value
             };
+
 
             _context.Books.Add(book);
             _context.SaveChanges();
@@ -87,6 +88,20 @@ namespace MyLibrary.Forms
             txtcBookName.ResetText();
             comboBox1.ResetText();
             comboBox2.ResetText();
+        }
+
+        private void AddBook_Load(object sender, EventArgs e)
+        {
+            var wholeMyBooks = _context.Books
+                                             .Include("Genre")
+                                             .Include("Author")
+
+                                             .ToList();
+
+            foreach (var item in wholeMyBooks)
+            {
+                dtGrdBooks.Rows.Add(item.Name, item.Genre.Name, item.Author.Name + " " + item.Author.Surname, item.Price);
+            }
         }
         //kitab elave etmek end
 
