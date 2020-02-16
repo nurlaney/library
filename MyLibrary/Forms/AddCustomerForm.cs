@@ -34,14 +34,14 @@ namespace MyLibrary.Forms
             _context.Customers.Add(customer);
             _context.SaveChanges();
         }
-
+        // musteri elave etmek metodu
         private void btncCustomerAdd_Click(object sender, EventArgs e)
         {
             Test4();
+            MessageBox.Show("Customer Added");
             txtcCustomEmail.ResetText();
             txtcCustomerName.ResetText();
             txtcCustomerSurname.ResetText();
-            MessageBox.Show("Customer Added");
         }
     }
 }

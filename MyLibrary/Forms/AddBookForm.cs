@@ -16,14 +16,40 @@ namespace MyLibrary.Forms
 {
     public partial class AddBookForm : Form
     {
-        //private readonly MyLibraryDbContext _context;
+       private readonly MyLibraryDbContext _context;
         public AddBookForm()
         {
             InitializeComponent();
-            //_context = new MyLibraryDbContext();
-            //Test();
+            _context = new MyLibraryDbContext();
+            fillcomboboxgenre();
+            fillcomboboxauthor();
+          
         }
+# region Fill methods
+        //genre comboboxun bazadan doldurulmasi
+        private void fillcomboboxgenre()
+        {
+            var genreitems = _context.Genres.ToList();
+            foreach (var item in genreitems)
+            {
+                comboBox1.Items.Add(item.Name);
+            }
+        }
+        
+        private void fillcomboboxauthor()
+        {
+            var authoritems = _context.Authors.ToList();
+            foreach (var item in authoritems)
+            {
 
+                var fulname = item.Name + " " + item.Surname;
+                comboBox2.Items.Add(fulname);
+            }
+        }
+        //end method
+        #endregion //
+
+        //yazici elave etme ve janr elave etme pencerelerinin acilmasi
         private void btncAddGenre_Click(object sender, EventArgs e)
         {
             AddGenre addinggenre = new AddGenre();
@@ -35,18 +61,37 @@ namespace MyLibrary.Forms
             AddAuthorForm addingauthor = new AddAuthorForm();
             addingauthor.Show();
         }
+        //pencerelerin acilmasi end
 
         
+        //kitab elave etmek start
+        private void addwholebook()
+        {
+            Book book = new Book()
+            {
+                Name = txtcBookName.Text,
+                GenreId= comboBox1.SelectedIndex,
+                AuthorId= comboBox2.SelectedIndex,
+                Price = nmrcPrice.Value
+            };
 
-        //private void Test()
-        //{
-        //    Book Book = new Book()
-        //    {
-        //        Name = "1001 Gece"
-        //    };
+            _context.Books.Add(book);
+            _context.SaveChanges();
 
-        //    _context.Books.Add(Book);
-        //    _context.SaveChanges();
-        //}
+        }
+
+        private void btncAddBook_Click(object sender, EventArgs e)
+        {
+            addwholebook();
+            MessageBox.Show("Book Added");
+            txtcBookName.ResetText();
+            comboBox1.ResetText();
+            comboBox2.ResetText();
+        }
+        //kitab elave etmek end
+
+
+
+
     }
 }

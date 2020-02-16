@@ -21,6 +21,7 @@ namespace MyLibrary.Forms
             InitializeComponent();
             _context = new MyLibraryDbContext();
         }
+        //adding method
         private void Test3()
         {
             Genre Genre = new Genre()
@@ -31,7 +32,7 @@ namespace MyLibrary.Forms
             _context.Genres.Add(Genre);
             _context.SaveChanges();
         }
-
+        //adding method end
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
             Test3();

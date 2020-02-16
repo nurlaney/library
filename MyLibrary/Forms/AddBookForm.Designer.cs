@@ -84,6 +84,8 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "AAA BBB"});
             this.comboBox2.Location = new System.Drawing.Point(13, 126);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(195, 21);
@@ -126,6 +128,7 @@
             this.btncAddBook.TabIndex = 8;
             this.btncAddBook.Text = "Add Book";
             this.btncAddBook.UseVisualStyleBackColor = true;
+            this.btncAddBook.Click += new System.EventHandler(this.btncAddBook_Click);
             // 
             // nmrcPrice
             // 

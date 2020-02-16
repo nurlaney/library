@@ -123,6 +123,7 @@ namespace MyLibrary.Forms
             this.Controls.Add(this.btnGoOrders);
             this.Name = "dashboardForm";
             this.Text = "dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtGrdBooks)).EndInit();
             this.ResumeLayout(false);
 

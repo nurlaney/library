@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyLibrary.Models
 {
@@ -16,8 +17,10 @@ namespace MyLibrary.Models
         public int GenreId { get; set; }
 
         public int AuthorId { get; set; }
+        [Column(TypeName = "money")]
+public decimal Price { get; set; }
 
-        public Genre Genre { get; set; }
+        public Genre Genre { get; set; } 
         public Author Author { get; set; }
     }
 }

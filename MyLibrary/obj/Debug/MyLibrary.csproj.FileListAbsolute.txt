@@ -30,3 +30,5 @@ C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCor
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.UserAdded.resources
 C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.UsernameAddedtoUsersTable.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.AddingBookPrice.resources
+C:\Users\DostTech\source\repos\MyLibrary\MyLibrary\obj\Debug\MyLibrary.Migrations.PriceDatatypeChanged.resources
